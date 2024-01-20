@@ -15,7 +15,7 @@ pipeline {
         
         stage('Deploy to Tomcat') {
             steps {
-               deploy adapters: [tomcat9(credentialsId: 'mytompass', path: '', url: 'http://3.135.214.77:8080/')], contextPath: 'myapp', war: '"**/*.war"'
+               deploy adapters: [tomcat9(credentialsId: 'matompass', path: '', url: 'http://3.135.214.77:8080/')], contextPath: 'myapp', war: '"**/*.war"'
             }
         }
     }
